@@ -20,7 +20,7 @@
 
 ol.center
 {
-    list-style-position: inside; /* styles for the ordered list. Different colour for the ordered list numbers, plus aligning the numbers centrally*/
+    list-style-position: inside; /* styles for the ordered list. Aligning the numbers centrally*/
     text-align: center;
     padding: 0;
 }
