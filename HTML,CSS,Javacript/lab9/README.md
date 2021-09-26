@@ -1,1 +1,1 @@
-Unable to copy over the SQL database into Github, thus this webiste wont be able to store or display birthday names and dates as intended, but still is worthwile as it shows HTML, SQL and jinja coding from me
+Unable to copy over the SQL database into Github, thus this website won't be able to store or display birthday names and dates as intended, but still is worthwhile as it shows HTML, SQL and jinja coding from me
