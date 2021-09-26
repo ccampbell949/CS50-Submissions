@@ -1,0 +1,1 @@
+Unable to copy over the SQL database into Github, thus this webiste wont be able to store or display birthday names and dates as intended, but still is worthwile as it shows HTML, SQL and jinja coding from me
