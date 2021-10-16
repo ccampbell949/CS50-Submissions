@@ -32,7 +32,7 @@ Transaction history:
 Add cash:
 ![image](https://user-images.githubusercontent.com/80074996/137600756-c7ce4df7-e344-43fa-8607-74dd88a5ba5e.png)
 
-Add cash succesfull:
+Add cash successfull:
 ![image](https://user-images.githubusercontent.com/80074996/137600783-7d1afb19-706e-4396-b4c9-b3120342c0fe.png)
 
 Register:
