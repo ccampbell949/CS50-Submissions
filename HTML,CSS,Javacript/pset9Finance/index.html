@@ -1,0 +1,49 @@
+{% extends "layout.html" %} <!--create table similar to Index-->
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %} <!--Want to display total shares user has-->
+<!--symbol, name, shares, current price, total-->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Current Price</th>
+            <th>Total</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"><!--want to display grand total in bottom right cell - skip first 4 columns--></td>
+                <td>
+                    {{total}}
+                </td>
+            </tr>
+            
+           </tfoot>
+           <tbody>
+               {% for holding in holdings %} <!-- for-loop for each row displaying data to user-->
+               <tr>
+                   <td>{{holding["symbol"]}}</td>
+                   <td>{{holding["name"]}}</td>
+                   <td>{{holding["shares"]}}</td>
+                   <td>{{holding["price"]}}</td>
+                   <td>{{holding["total"]}}</td>
+               </tr>
+               {% endfor %}
+               
+               <tr>
+                   <td colspan="4">CASH</td>
+                   <td>
+                       {{cash}}
+                   </td>
+                   
+               </tr>
+           </tbody>
+    </table>
+    
+{% endblock %}
