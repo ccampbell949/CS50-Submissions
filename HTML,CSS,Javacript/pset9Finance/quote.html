@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+
+    <form action="/quote" method="post">
+        <div class="form-group"> <!--form group from Bootstrap documentaion-->
+            <input autocomplete="off" placeholder="Stock Symbol"class="form-control" autofocus name="symbol" type="text">
+            <!--symbol of stock--><!--form control from Bootstrap documentation-->
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+        
+        
+        </form>
+        
+{% endblock %}
