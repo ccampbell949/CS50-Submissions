@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %} <!--Want to display both share symbol and the number of shares-->
+
+    <form action="/buy" method="post">
+        <div class="form-group"> <!--form group from Bootstrap documentaion-->
+            <input autocomplete="off" placeholder="Stock Symbol"class="form-control" autofocus name="symbol" type="text">
+            <!--symbol of stock--><!--form control from Bootstrap documentation-->
+        </div>
+         <div class="form-group"> <!--form group from Bootstrap documentaion-->
+            <input autocomplete="off" placeholder="Shares"class="form-control" name="shares" min="1" type="number"> <!--remove autofocus-->
+            <!--symbol of stock--><!--form control from Bootstrap documentation-->
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
+
+
+        </form>
+
+{% endblock %}
