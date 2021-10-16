@@ -1,0 +1,35 @@
+{% extends "layout.html" %} <!--create table similar to Index-->
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %} <!--Want to display total shares user has-->
+<!--symbol, name, shares, current price, total-->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Current Price</th>
+            <th>Transacted</th>
+            </tr>
+        </thead>
+        
+           <tbody>
+               {% for transaction in transaction_history %} <!-- for-loop for each row displaying data to user-->
+               <tr>
+                   <td>{{transaction["symbol"]}}</td>
+                   <td>{{transaction["name"]}}</td>
+                   <td>{{transaction["shares"]}}</td>
+                   <td>{{transaction["price"]}}</td>
+                   <td>{{transaction["transacted"]}}</td>
+               </tr>
+               {% endfor %}
+               
+              
+           </tbody>
+    </table>
+    
+{% endblock %}
